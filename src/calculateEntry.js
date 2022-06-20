@@ -12,7 +12,8 @@ function countEntrants(entrants) {
 function calculateEntry(entrants) {
   if (!entrants || Object.keys(entrants).length === 0) return 0;
   const entrantsByAge = countEntrants(entrants);
-  return Object.keys(entrantsByAge).reduce((acc, curr) => acc + (entrantsByAge[curr] * prices[curr]), 0);
+  return Object
+    .keys(entrantsByAge).reduce((acc, curr) => acc + (entrantsByAge[curr] * prices[curr]), 0);
 }
 
 module.exports = { calculateEntry, countEntrants };

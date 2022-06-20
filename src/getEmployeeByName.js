@@ -7,8 +7,8 @@ function getEmployeeByName(employeeName) {
     return {};
   }
   const verifyEmployee = employees.find((employee) =>
-  (employeeName === employee.firstName || employeeName === employee.lastName));
-return verifyEmployee;
+    (employeeName === employee.firstName || employeeName === employee.lastName));
+  return verifyEmployee;
 }
 
 module.exports = getEmployeeByName;
