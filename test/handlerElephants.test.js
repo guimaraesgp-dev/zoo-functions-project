@@ -19,7 +19,6 @@ describe('Testes da função HandlerElephants', () => {
     });
   
     test('Retorna a popularidade dos elefantes', () => {
-      // https://jestjs.io/pt-BR/docs/expect
       expect(handlerElephants('popularity')).toBeGreaterThanOrEqual(5);
     });
   

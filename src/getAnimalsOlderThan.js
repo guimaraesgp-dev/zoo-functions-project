@@ -1,6 +1,6 @@
 const data = require('../data/zoo_data');
 
-function getAnimalsOlderThan(animal, age) {
+function getAnimalsOlderThan(animal, age) 
   const { species } = data;
 
   function getAnimalsOlderThan(animal, animalAge) {
