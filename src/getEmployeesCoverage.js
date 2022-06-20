@@ -36,11 +36,10 @@ function getEmployeesCoverage(name) {
     funcionario = employees.filter((employer) => employer.firstName === name.name
     || employer.id === name.id || employer.lastName === name.name);
   } else {
-    funcionario = employees.filter((employer) => funcionarios
-      .find((funci) => employer.firstName === funci));
+    funcionario = employees.filter((employer) => funcionarios.find((funci) => employer.firstName === funci));
   }
-  if (!funcionario.length) {
-    throw Error('Informações inválidas');
+  if (!funcionario) {
+    throw new Error('Informações inválidas');
   }
   return getData(funcionario, name);
 }
