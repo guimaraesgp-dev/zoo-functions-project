@@ -6,7 +6,7 @@ function getAnimalMap(options) {
   if (options === undefined) {
     const object = {};
     species.forEach((specie) => {
-      object[specie.name] = specie.residents.length;
+      object[specie.location] = specie.residents.length;
     });
     return object;
   }
